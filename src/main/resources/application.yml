@@ -1,0 +1,10 @@
+#spring:
+#  mvc:
+#    view:
+#      prefix: /WEB-INF/page/
+#      suffix: .html
+#·þÎñ
+server:
+  port: 9091
+  servlet:
+    context-path: /index.html
