@@ -10,13 +10,26 @@ import org.springframework.web.bind.annotation.RequestMapping;
 //@RequestMapping("/")
 public class IndexController {
 
-    @RequestMapping("/index.html")
+    /**
+     * 首页
+     * @return
+     */
+    @RequestMapping("/")
     private  String index(){
         return "index";
     }
 
-//    @RequestMapping("/mainPage.html")
-//    public String mainPage(){
-//        return "main";
+    /**
+     * 主页
+     * @return
+     */
+    @RequestMapping("/main")
+    private  String mainPage(){
+        return "main";
+    }
+
+//    @RequestMapping("/manage")
+//    public String login(){
+//        return "manage";
 //    }
 }

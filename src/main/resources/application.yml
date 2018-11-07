@@ -1,10 +1,36 @@
-#spring:
+spring:
+  thymeleaf:
+#    mode: HTML5
+#    prefix: classpath:/templates/pages/
+    suffix: .html
+    cache: false
+  devtools:
+    restart:
+      additional-paths: src/main/ #监听目录
+      enabled: true #开启
+
+#因为新版本的spring boot 不支持velocity,故暂时取消该方案
+#  velocity:
+#    charset: UTF-8
+#    properties:
+#      input:
+#        encoding: UTF-8
+#      output:
+#        encoding: UTF-8
+#    resourceLoaderPath: classpath:/templates/
+#    suffix: .html
+#    toolbox-config-location: /WEB-INF/toolbox.xml
+
 #  mvc:
 #    view:
 #      prefix: /WEB-INF/page/
 #      suffix: .html
-#����
+#spring:
+#  view:
+#    prefix: /src/main/webapp/WEB-INF/page/
+#    suffix: .html
+#服务
 server:
-  port: 9091
-  servlet:
-    context-path: /index.html
+  port: 9090
+#  servlet:
+#    context-path: /index.html
